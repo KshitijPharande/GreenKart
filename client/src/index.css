@@ -1,0 +1,33 @@
+/* Custom Styling for Rating Stars */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+@theme {
+  --color-primary: #4fbf8b; /* Primary color */
+  --color-primary-dull: #44ae7c; /* Dull primary color */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom styling for the rating stars */
+.star-rating span {
+  cursor: pointer;
+  font-size: 1.5rem; /* Adjust star size */
+  color: var(--color-primary-dull); /* Default gray color */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.star-rating span:hover {
+  color: var(--color-primary); /* Change to primary color on hover */
+}
+
+.star-rating .filled {
+  color: var(--color-primary); /* Filled stars */
+}
